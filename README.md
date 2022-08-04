@@ -17,3 +17,4 @@ for style weuse semantic ui cdn
  3 create action and action constant
  4 create product reducer
  5 create product store
+ 6 create components file

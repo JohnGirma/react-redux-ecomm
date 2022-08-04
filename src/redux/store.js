@@ -1,7 +1,7 @@
-import {createStore} from "@reduxjs/toolkit"
+import { createStore } from '@reduxjs/toolkit'
 import reducers from "./reducers/index"
 
-const prodStore=createStore(
-    reducers,{}
-)
-export default prodStore
+
+const store = createStore(reducers,{})
+
+ export default store
