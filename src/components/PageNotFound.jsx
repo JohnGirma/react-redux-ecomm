@@ -1,10 +1,10 @@
-const ProductDetail=()=>{
+const PageNotFound=()=>{
     return(
         <div >
             <p style={ {marginTop:"60px"}}>
-                 Product Detail
+           404
             </p>
         </div>
     )
 }
-export default ProductDetail
+export default PageNotFound

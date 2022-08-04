@@ -18,3 +18,4 @@ for style weuse semantic ui cdn
  4 create product reducer
  5 create product store
  6 create components file
+ 7 implement static and dynamic routing of components
