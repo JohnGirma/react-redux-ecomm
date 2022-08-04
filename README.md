@@ -19,3 +19,7 @@ for style weuse semantic ui cdn
  5 create product store
  6 create components file
  7 implement static and dynamic routing of components
+ 8 use axios to fetch fake API
+ 9 dispatch action 
+ 10 modifying the reducer to update the state
+ display the product
