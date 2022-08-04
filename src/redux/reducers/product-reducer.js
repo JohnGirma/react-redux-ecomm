@@ -9,8 +9,8 @@ const initialState={
     }]
 }
 
-export const productReducer=(state,action)=>{
-    switch(type){
+export const productReducer=(state=initialState,action)=>{
+    switch(action.type){
         case ProductActionType.ALL_PRODUCT:
             return state
         default:

@@ -4,3 +4,4 @@ import { productReducer } from './product-reducer'
 const reducers=combineReducers({
     productReducer:productReducer
 })
+export default reducers
