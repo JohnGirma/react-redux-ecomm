@@ -6,8 +6,8 @@ const ProductComponent=()=>{
     // const product=products[0]
     const allMarkup=products.map((prod)=>{
         return(
-        <div className="four wide coiumn" key={prod.id}>
-           <div className="ui link cards">
+        <div className="ui three  coiumn grid" key={prod.id}>
+           <div className="ui centered  cards ">
                 <div className="card">
                     <div className="image">
                         <img src={prod.image} alt={prod.title}  />
