@@ -1,0 +1,6 @@
+export const ProductActionType={
+
+    ALL_PRODUCT:"ALL_PRODUCT",
+    SELECTED_PRODUCT:"SELECTED_PRODUCT",
+    REMOVE_PRODUCT:"REMOVE_PRODUCT"
+}
