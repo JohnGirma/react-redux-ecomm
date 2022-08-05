@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom"
 import { useEffect } from "react"
 import axios from 'axios'
 import { useDispatch,useSelector } from "react-redux"
-import {selectedProduct} from "../redux/action/product-actions"
+import {selectedProduct,removeProduct} from "../redux/action/product-actions"
 
 const ProductDetail=()=>{
     const product=useSelector((state)=>state.selectedProductReducer)
@@ -19,14 +19,21 @@ const ProductDetail=()=>{
         dispatch(selectedProduct(result.data))
         }
         useEffect(()=>{
-            if(productId && productId!=="")
-            getProduct()
+            if(productId && productId!==""){
+            getProduct()}
+            return(()=>{
+                dispatch(removeProduct())
+            })
         },[productId]) 
 
         // console.log("from the product ",product)
     return(
-        <div className="ui grid container" style={{margin:"60px"}}>
-            {Object.keys(product).length===0?(<div>loading product</div>):(
+        <div className="ui grid container" style={{margin:"60px" ,alignContent:"center"}}>
+            {Object.keys(product).length===0?(<div className="ui segment centered grid ">
+                                                <div className="ui active inverted dimmer">
+                                                        <div className="ui massive text loader">Loading</div>
+                                                </div>
+                                            </div>):(
                 <div className="ui placeholder segment">
                         <div className="ui two column stackable center aligned grid">
                             <div className="ui vertical divider"></div>
