@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux"
+import { Link  } from "react-router-dom"
 
 const ProductComponent=()=>{
     const products=useSelector((state)=>state.productReducer.productLists)
@@ -6,7 +7,8 @@ const ProductComponent=()=>{
     // const product=products[0]
     const allMarkup=products.map((prod)=>{
         return(
-        <div className="ui three  coiumn grid" key={prod.id}>
+        <div className="four wide  coiumn " key={prod.id}>
+            <Link to={`/products/${prod.id}`}>
            <div className="ui centered  cards ">
                 <div className="card">
                     <div className="image">
@@ -19,6 +21,7 @@ const ProductComponent=()=>{
                     </div>
                 </div>
            </div>
+           </Link>
         </div>
         )
     })

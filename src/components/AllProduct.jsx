@@ -18,7 +18,7 @@ const AllProduct=()=>{
     useEffect(()=>{
         getAllProduct()
     },[])
-    console.log("from the store ",products)
+    // console.log("from the store ",products)
     return(
         <div className="ui grid containner" style={{marginTop:"60px"}}>
             <ProductComponent/>
