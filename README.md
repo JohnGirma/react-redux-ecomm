@@ -27,3 +27,5 @@ for style weuse semantic ui cdn
  13 get product id from the url then get product details from the api
  14 use useParams to get the url
  15 use object detraction {Object.keys(product).length===0?(<div>loading product</div>):() then define const {image,title,price,category,description}=product
+ 16 use github
+ 17 merge main branch to development
